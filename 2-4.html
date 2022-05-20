@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="2-4.js"></script>
+    <script>
+        'use strict'
+
+        let a = prompt("Введите a:");
+        let b = prompt("Введите b:");
+
+        let result = Addition(a, b);
+        if (result !== undefined && !(isNaN(result))) {
+            alert(result);
+        }
+
+        let result1 = Subtraction(a, b);
+        if (result1 !== undefined && !(isNaN(result1))) {
+            alert(result1);
+        }
+
+        let result2 = Multiplication(a, b);
+        if (result2 !== undefined && !(isNaN(result2))) {
+            alert(result2);
+        }
+
+        let result3 = Division(a, b);
+        if (result3 !== undefined && !(isNaN(result3))) {
+            alert(result3);
+        }
+
+    </script>
+</body>
+
+</html>
