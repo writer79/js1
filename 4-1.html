@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        var number1 = prompt("Введите число от 0 до 999", '');
+        number1 = Number(number1);
+        function NumToObj(number1) {
+            if (number1 > 0 && number1 < 1000 && Number.isInteger(number1)) {
+                return {
+                    units: number1 % 10,
+                    tens: Math.floor(number1 / 10) % 10,
+                    hangreds: Math.floor(number1 / 100),
+                }
+            }
+            else {
+                console.log('Неверное число');
+                return {};
+            }
+        }
+        console.log(NumToObj(number1));
+    </script>
+</body>
+
+</html>
