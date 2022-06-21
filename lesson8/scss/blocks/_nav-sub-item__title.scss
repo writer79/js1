@@ -1,0 +1,28 @@
+.nav-sub-item__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-pink;
+    text-transform: uppercase;  
+    padding: 0 0 12px 33px;
+    text-decoration: none;
+}
+
+.nav-sub-item__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey-midle;
+    padding: 0 0 11px 27px;
+    text-decoration: none;
+}
+
+.nav-sub-item__title:hover {
+    color: $grey;
+    cursor: pointer;
+}
+
+.nav-sub-item__item:hover {
+    color: $red;
+    cursor: pointer;
+}

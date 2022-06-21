@@ -1,0 +1,161 @@
+.registration {
+    height: 89px;
+    background-color: $light-grey;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-pink;
+    text-transform: uppercase;
+    padding-top: 59px;
+}
+
+.registration__form {
+    padding: 64px 0 96px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg__left {
+    width: 31.6%;
+}
+
+.registration__fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration__legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    padding-bottom: 20px;
+}
+
+.reg__field {
+    padding: 12px;
+    max-width: 95%;
+    margin-bottom: 20px;
+}
+
+.choice__sex {
+    padding: 11px 0 33px 0;
+}
+
+.reg__text {
+    width: 360px;
+    padding: 21px 0 33px 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: $grey;
+}
+
+.join__button {
+    width: 167px;
+    padding: 15px;
+    background-color: $dark-pink;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    
+}
+
+.join__button::after {
+    content: '';
+    background-image: url(../img/strelka.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 130px;
+    bottom: auto;
+    right: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.join__button:hover,
+.join__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.join__button:active {
+    opacity: 1;
+}
+
+.reg__right {
+    padding: 0 0px 0px 103px;
+    width: 57.2%;
+}
+
+
+.loyalty__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+    text-transform: uppercase;
+    padding: 0 0 22px 0;
+}
+.loyalty__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+    padding-bottom: 5px;
+}
+
+.loyalty__list {
+    margin: 0;
+    list-style: none;
+}
+
+.loyalty__list-item {
+    position: relative;
+    left: 25px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $black;
+    margin-top: 16px;
+}
+
+.loyalty__list-item::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url(../img/galka.png);
+    background-size: 15px 15px;
+}
+
+@media (max-width: $desktop-width) {
+    .reg__right {
+        width: 100%;
+        padding: 0px 0px 0px 23px;
+    }
+
+    .reg__left {
+        width: 100%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .registration__form {
+        flex-direction: column;
+    }
+
+    .reg__right {
+        padding: 57px 0px 0px 0px;
+    }
+}
